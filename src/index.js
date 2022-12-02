@@ -32,7 +32,7 @@ function createMarkup(arr) {
     const markup = arr.map(item =>
         `<a class="photo-link" href="${item.largeImageURL}">
             <div class="photo-card">
-                <img src="${item.webformatURL}" alt="${item.tags}" loading="lazy" />
+                <img src="${item.webformatURL}" alt="${item.tags}" loading="lazy"/>
                     <div class="info">
                         <p class="info-item">
                             <b>Likes</b>
@@ -51,7 +51,8 @@ function createMarkup(arr) {
                             ${item.downloads}
                         </p>
                     </div>
-            </div>`).join('');
+            </div>
+        </a>`).join('');
     // refs.gallery.insertAdjacentHTML('beforeend', markup);
     refs.gallery.innerHTML = markup;
 
