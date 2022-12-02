@@ -4,12 +4,8 @@
     flex-wrap: wrap;
     gap: 30px;
     margin-bottom: 50px;
+    padding-top: 20px;
 }
-
-
-
-
-
 
 .load-more{
     color: darkcyan;
@@ -17,4 +13,12 @@
     border: inherit;
     padding: 5px;
     cursor: pointer;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+.photo-card{
+    width: 240px;
 }
