@@ -3,8 +3,9 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-    margin-bottom: 50px;
+    // margin-bottom: 50px;
     padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .load-more{
@@ -25,6 +26,7 @@ img{
 }
 .photo-card{
     width: 270px;
+    height: 100%;
 }
 
 .photo-link{
@@ -47,5 +49,3 @@ img{
     text-align: center;
 }
 
-.info-item{
-}
