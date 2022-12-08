@@ -54,7 +54,7 @@ async function pixabayAPI(name, page) {
             orientation: 'horizontal',
             safesearch: 'true',
             page: page,
-            per_page: 12,
+            per_page: 40,
         },
     };
 
@@ -85,7 +85,9 @@ function createMarkup(arr) {
     const markup = arr.hits.map(item =>
         `<a class="photo-link" href="${item.largeImageURL}">
             <div class="photo-card">
-                <img src="${item.webformatURL}" alt="${item.tags}" loading="lazy"/>
+            <div class="photo">
+            <img src="${item.webformatURL}" alt="${item.tags}" loading="lazy"/>
+            </div>
                     <div class="info">
                         <p class="info-item">
                             <b>Likes</b>
@@ -124,9 +126,9 @@ function message(length, isVisible, per_page, total) {
         );
     }
     if (isVisible >= total) { 
-        refs.loadMore.style.display = 'none';
         Notify.info(
             "We're sorry, but you've reached the end of search results."
         );
+        refs.loadMore.style.display = 'none';
     }
 }

@@ -1,11 +1,14 @@
 .gallery{
+    // position: fixed;
+    // top: 0;
+
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 30px;
-    // margin-bottom: 50px;
+    gap: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .load-more{
@@ -19,14 +22,18 @@
 
 img{
     display: block;
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    object-position: center;
 }
 .photo-card{
     width: 270px;
-    height: 100%;
+}
+
+.photo{
+    min-width: 270px;
+    height: 250px;
+    // overflow: hidden;
 }
 
 .photo-link{
@@ -39,8 +46,8 @@ img{
 .info{
     padding: 10px 10px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
+    // align-items: center;
     gap: 10px;
     color: black;
     font-weight: 500;
@@ -49,3 +56,9 @@ img{
     text-align: center;
 }
 
+.info-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
